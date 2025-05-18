@@ -1,0 +1,71 @@
+/* Ensure footer stays at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light background to match previous page */
+}
+
+/* Header styling */
+header {
+    background-color: teal;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main and article layout */
+main {
+    flex: 1; /* Push footer down */
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-left: 5px solid teal;
+}
+
+/* Aside styling */
+aside {
+    background-color: #e6f2f2;
+    padding: 10px;
+    border-left: 4px solid #a0d3d3;
+}
+
+/* Footer styling */
+footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
